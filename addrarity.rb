@@ -1,3 +1,4 @@
+puts "Enter your rarity weight: "
 rate = gets.chomp
 
 Dir["*"].each do |oldfile|
