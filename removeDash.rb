@@ -1,6 +1,5 @@
 Dir["./*"].each do |oldfile|
-  newName = oldfile.sub("_","")
-  newName = oldfile.sub(" ","")
+  newName = oldfile.gsub("_","")
   File.rename(oldfile, newName)
   puts "File #{oldfile} has been renamed!"
 end
